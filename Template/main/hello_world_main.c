@@ -6,35 +6,30 @@
    software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
    CONDITIONS OF ANY KIND, either express or implied.
 */
-#include <stdio.h>
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
-#include "esp_system.h"
-#include "esp_spi_flash.h"
-
+#include "driver/gpio.h"
+#include "driver/can.h"
 
 void app_main()
 {
-    printf("Hello world!\n");
+    //Initialize configuration structures using macro initializers
+    can_general_config_t g_config = CAN_GENERAL_CONFIG_DEFAULT(GPIO_NUM_21, GPIO_NUM_22, CAN_MODE_NORMAL);
+    can_timing_config_t t_config = CAN_TIMING_CONFIG_500KBITS();
+    can_filter_config_t f_config = CAN_FILTER_CONFIG_ACCEPT_ALL();
 
-    /* Print chip information */
-    esp_chip_info_t chip_info;
-    esp_chip_info(&chip_info);
-    printf("This is ESP32 chip with %d CPU cores, WiFi%s%s, ",
-            chip_info.cores,
-            (chip_info.features & CHIP_FEATURE_BT) ? "/BT" : "",
-            (chip_info.features & CHIP_FEATURE_BLE) ? "/BLE" : "");
-
-    printf("silicon revision %d, ", chip_info.revision);
-
-    printf("%dMB %s flash\n", spi_flash_get_chip_size() / (1024 * 1024),
-            (chip_info.features & CHIP_FEATURE_EMB_FLASH) ? "embedded" : "external");
-
-    for (int i = 10; i >= 0; i--) {
-        printf("Restarting in %d seconds...\n", i);
-        vTaskDelay(1000 / portTICK_PERIOD_MS);
+    //Install CAN driver
+    if (can_driver_install(&g_config, &t_config, &f_config) == ESP_OK) {
+        printf("Driver installed\n");
+    } else {
+        printf("Failed to install driver\n");
+        return;
     }
-    printf("Restarting now.\n");
-    fflush(stdout);
-    esp_restart();
+
+    //Start CAN driver
+    if (can_start() == ESP_OK) {
+        printf("Driver started\n");
+    } else {
+        printf("Failed to start driver\n");
+        return;
+    }
+
 }
