@@ -4,75 +4,61 @@
 #include "freertos/queue.h"
 #include "string.h"
 #include "freertos/task.h"
+#include "driver/i2c.h"
 
-#define UART1 (UART_NUM_1)
-#define UART0 (UART_NUM_0)
-#define UART2 (UART_NUM_2)
+#define ESP_SLAVE_ADDR 0x68 
+#define WRITE_BIT  I2C_MASTER_WRITE /*!< I2C master write */
+#define READ_BIT   I2C_MASTER_READ  /*!< I2C master read */
+#define ACK_CHECK_EN   0x1     /*!< I2C master will check ack from slave*/
+#define ACK_CHECK_DIS  0x0     /*!< I2C master will not check ack from slave */
+#define ACK_VAL    0x0         /*!< I2C ack value */
+#define NACK_VAL   0x1         /*!< I2C nack value */
 
-#define UART2_RX_PIN (GPIO_NUM_16)
-#define UART2_TX_PIN (GPIO_NUM_17)
+uint8_t second,minute,hour,day,date,month,year;
+void bcd_to_dec(uint8_t number)
+{
+    return((number/16*10)+(number%16));
+}
 
-#define UART1_RX_PIN (GPIO_NUM_22)
-#define UART1_TX_PIN (GPIO_NUM_23)
-
-#define UART0_RX_PIN (GPIO_NUM_3)
-#define UART0_TX_PIN (GPIO_NUM_1)
-
-#define UART_BAUND_115200 (115200)
-#define UART_BAUND_9600 (9600)
-
-#define BUF_SIZE (100)
-
-uint32_t Store[256];
-
+static esp_err_t  i2c_master_write_slave(i2c_port_t i2c_num, uint8_t *data_wr, size_t size)
+{
+    i2c_cmd_handle_t cmd = i2c_cmd_link_create();
+    i2c_master_start(cmd);
+    TEST_ESP_OK(i2c_master_write_byte(cmd, ( ESP_SLAVE_ADDR << 1 ) | WRITE_BIT, ACK_CHECK_EN));
+    TEST_ESP_OK(i2c_master_write(cmd, data_wr, size, ACK_CHECK_EN));
+    TEST_ESP_OK(i2c_master_stop(cmd));
+    esp_err_t ret = i2c_master_cmd_begin(i2c_num, cmd, 5000 / portTICK_RATE_MS);
+    i2c_cmd_link_delete(cmd);
+    return ret;
+}
 
 void app_main()
 {
-    ////////////cấu hình uart/////////////////
-    uart_config_t  uart_config = 
+    i2c_config_t i2c_config =
     {
-        .baud_rate = UART_BAUND_115200,
-        .data_bits = UART_DATA_8_BITS,
-        .parity = UART_PARITY_DISABLE,
-        .stop_bits = UART_STOP_BITS_1,
-        .flow_ctrl = UART_HW_FLOWCTRL_DISABLE,
-    };
-//////////////////chọn UART và kiểm tra cấu hình có lỗi không////////
-    ESP_ERROR_CHECK(uart_param_config(UART1, &uart_config));
-    ///////////////chọn chân Tx, Rx//////////
-    ESP_ERROR_CHECK(uart_set_pin(UART1,UART1_TX_PIN,UART1_RX_PIN,0,0));
-    //////////////////chọn buffer cho Tx bộ đệm Tx, Rx///////////////
-    ESP_ERROR_CHECK(uart_driver_install(UART1, BUF_SIZE * 2, BUF_SIZE * 2, 20, NULL, 0));
-//////////////////////////////////////////////
+        .mode=I2C_MODE_MASTER,    // mode
+        .sda_io_num=GPIO_NUM_18,     //SDA pin 
+        .sda_pullup_en=GPIO_PULLUP_ENABLE, //R kéo lện
+        .scl_io_num=GPIO_NUM_19,       // SCL pin
+        .scl_pullup_en=GPIO_PULLUP_ENABLE,  //R kéo lên
+        .master.clk_speed=100000,/// clock chế độ master (coi datasheet của slave)
 
-    char* data_send = (char *) malloc(256);
-    char* data_receive = (char *) malloc(256);
-    char message[15]="hello \n\r";
-    data_send=message;
-    //int *a ; a="hdfat"//a đang trõ tới chuỗi
+    };
+    TEST_ESP_OK(i2c_param_config(I2C_NUM_1,&i2c_config));
+    // 1 cho master , 0 cho slave
+
+    TEST_ESP_OK(i2c_driver_install(I2C_NUM_1,I2C_MODE_MASTER,1024,1024, 0));
+
+    TEST_ESP_OK(i2c_set_data_mode(I2C_NUM_1, I2C_DATA_MODE_MSB_FIRST, I2C_DATA_MODE_MSB_FIRST));
+/////////////////////////////////////////////////
+    uint8_t *data_write = (uint8_t *) malloc(256);
+    uint8_t *data_read = (uint8_t *) malloc(256);
+
+    data_write[0]=0x00;
+    i2c_master_write_slave(I2C_NUM_1, data_write, 2);
+
     while(1)
     {
-        
-        uart_write_bytes(UART1, (const char*) data_send,strlen(data_send));
-        uart_wait_tx_done(UART1, 0);
-        // đợi chuyền xong////
-        //////////////////////////////////////////
-        uart_read_bytes(UART1,(uint8_t *) data_receive, 20,0);
-        printf("\n\r");
-        for (int i=0;i<20;i++)
-        {
-            if(((*(data_receive+i)>=48)&&(*(data_receive+i)<=57))||((*(data_receive+i)>=97)&&(*(data_receive+i)<=122))||((*(data_receive+i)>=65)&&(*(data_receive+i)<=90)))
-             {
-                 printf("%c",*(data_receive+i));
-             }
-             else
-             {
-                 printf(" ");
-             }
-             
-        }
-        printf("\n\r");
-        uart_flush(UART1);
         
         vTaskDelay(1000 / portTICK_PERIOD_MS);
         
