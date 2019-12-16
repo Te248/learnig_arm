@@ -4,6 +4,7 @@ main.o:     file format elf32-xtensa-le
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
+<<<<<<< HEAD
   0 .literal.app_main 00000064  00000000  00000000  00000034  2**2
                   CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
   1 .text         00000000  00000000  00000000  00000098  2**0
@@ -43,4 +44,43 @@ Idx Name          Size      VMA       LMA       File off  Algn
  18 .xt.lit       00000008  00000000  00000000  000015af  2**0
                   CONTENTS, RELOC, READONLY
  19 .xt.prop      0000009c  00000000  00000000  000015b7  2**0
+=======
+  0 .literal.app_main 00000034  00000000  00000000  00000034  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  1 .text         00000000  00000000  00000000  00000068  2**0
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .data         00000000  00000000  00000000  00000068  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  3 .bss          00000000  00000000  00000000  00000068  2**0
+                  ALLOC
+  4 .rodata.str1.4 00000110  00000000  00000000  00000068  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  5 .text.app_main 00000082  00000000  00000000  00000178  2**2
+                  CONTENTS, ALLOC, LOAD, RELOC, READONLY, CODE
+  6 .rodata.__func__$5955 00000009  00000000  00000000  000001fc  2**2
+                  CONTENTS, ALLOC, LOAD, READONLY, DATA
+  7 .debug_frame  00000028  00000000  00000000  00000208  2**2
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  8 .debug_info   00000400  00000000  00000000  00000230  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+  9 .debug_abbrev 00000146  00000000  00000000  00000630  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000005a  00000000  00000000  00000776  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 11 .debug_aranges 00000020  00000000  00000000  000007d0  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 12 .debug_ranges 00000010  00000000  00000000  000007f0  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 13 .debug_line   00000203  00000000  00000000  00000800  2**0
+                  CONTENTS, RELOC, READONLY, DEBUGGING
+ 14 .debug_str    0000046c  00000000  00000000  00000a03  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 15 .comment      0000003b  00000000  00000000  00000e6f  2**0
+                  CONTENTS, READONLY
+ 16 .xtensa.info  00000038  00000000  00000000  00000eaa  2**0
+                  CONTENTS, READONLY
+ 17 .xt.lit       00000008  00000000  00000000  00000ee2  2**0
+                  CONTENTS, RELOC, READONLY
+ 18 .xt.prop      00000048  00000000  00000000  00000eea  2**0
+>>>>>>> 77849cc08c3d2e5be08c300ec04e2484ac92fcb3
                   CONTENTS, RELOC, READONLY

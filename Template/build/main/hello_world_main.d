@@ -92,9 +92,13 @@ hello_world_main.o: \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/list.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /home/thuan/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
+<<<<<<< HEAD
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/uart_channel.h \
  /home/thuan/esp/esp-idf/components/newlib/include/string.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/string.h
+=======
+ /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/uart_channel.h
+>>>>>>> 77849cc08c3d2e5be08c300ec04e2484ac92fcb3
 
 /home/thuan/esp/esp-idf/components/driver/include/driver/gpio.h:
 
@@ -281,8 +285,11 @@ hello_world_main.o: \
 /home/thuan/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
 
 /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/uart_channel.h:
+<<<<<<< HEAD
 
 /home/thuan/esp/esp-idf/components/newlib/include/string.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/sys/string.h:
+=======
+>>>>>>> 77849cc08c3d2e5be08c300ec04e2484ac92fcb3
 /home/thuan/Documents/Git_stm32f4/Template/main/./hello_world_main.c:
