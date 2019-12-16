@@ -1,5 +1,4 @@
-hello_world_main.o: \
- /home/thuan/Documents/Git_stm32f4/Template/main/hello_world_main.c \
+main.o: /home/thuan/Documents/Git_stm32f4/Template/main/main.c \
  /home/thuan/esp/esp-idf/components/driver/include/driver/gpio.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_err.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdint.h \
@@ -285,4 +284,4 @@ hello_world_main.o: \
 /home/thuan/esp/esp-idf/components/newlib/include/string.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/sys/string.h:
-/home/thuan/Documents/Git_stm32f4/Template/main/./hello_world_main.c:
+/home/thuan/Documents/Git_stm32f4/Template/main/./main.c:
