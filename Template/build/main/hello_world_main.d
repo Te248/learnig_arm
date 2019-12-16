@@ -41,28 +41,36 @@ hello_world_main.o: \
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_intr_alloc.h \
  /home/thuan/esp/esp-idf/components/soc/include/soc/gpio_periph.h \
- /home/thuan/esp/esp-idf/components/driver/include/driver/can.h \
- /home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
- /home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/thuan/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
- /home/thuan/esp/esp-idf/components/esp32/include/xtensa/hal.h \
+ /home/thuan/esp/esp-idf/components/driver/include/driver/uart.h \
+ /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
+ /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h \
+ /home/thuan/esp/esp-idf/components/driver/include/driver/periph_ctrl.h \
+ /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
+ /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
+ /home/thuan/esp/esp-idf/components/esp32/include/esp_dport_access.h \
+ /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
+ /home/thuan/esp/esp-idf/components/esp32/include/xtensa/xtruntime.h \
  /home/thuan/esp/esp-idf/components/esp32/include/xtensa/config/core.h \
+ /home/thuan/esp/esp-idf/components/esp32/include/xtensa/hal.h \
  /home/thuan/esp/esp-idf/components/esp32/include/xtensa/xtensa-versions.h \
  /home/thuan/esp/esp-idf/components/esp32/include/xtensa/config/core-matmap.h \
  /home/thuan/esp/esp-idf/components/esp32/include/xtensa/config/tie.h \
+ /home/thuan/esp/esp-idf/components/esp32/include/xtensa/config/specreg.h \
+ /home/thuan/esp/esp-idf/components/esp32/include/xtensa/corebits.h \
+ /home/thuan/esp/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h \
+ /home/thuan/esp/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h \
+ /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
+ /home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
+ /home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
+ /home/thuan/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/thuan/esp/esp-idf/components/esp32/include/xtensa/config/system.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
- /home/thuan/esp/esp-idf/components/esp32/include/xtensa/corebits.h \
- /home/thuan/esp/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h \
  /home/thuan/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
- /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/projdefs.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/portable.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/deprecated_definitions.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/portmacro.h \
- /home/thuan/esp/esp-idf/components/esp32/include/xtensa/xtruntime.h \
- /home/thuan/esp/esp-idf/components/esp32/include/xtensa/config/specreg.h \
- /home/thuan/esp/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_crosscore_int.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_timer.h \
  /home/thuan/esp/esp-idf/components/heap/include/esp_heap_caps.h \
@@ -77,7 +85,14 @@ hello_world_main.o: \
  /home/thuan/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
- /home/thuan/esp/esp-idf/components/driver/include/driver/gpio.h
+ /home/thuan/esp/esp-idf/components/freertos/include/freertos/semphr.h \
+ /home/thuan/esp/esp-idf/components/freertos/include/freertos/queue.h \
+ /home/thuan/esp/esp-idf/components/freertos/include/freertos/task.h \
+ /home/thuan/esp/esp-idf/components/newlib/include/limits.h \
+ /home/thuan/esp/esp-idf/components/freertos/include/freertos/list.h \
+ /home/thuan/esp/esp-idf/components/freertos/include/freertos/queue.h \
+ /home/thuan/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h \
+ /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/uart_channel.h
 
 /home/thuan/esp/esp-idf/components/driver/include/driver/gpio.h:
 
@@ -161,17 +176,29 @@ hello_world_main.o: \
 
 /home/thuan/esp/esp-idf/components/soc/include/soc/gpio_periph.h:
 
-/home/thuan/esp/esp-idf/components/driver/include/driver/can.h:
+/home/thuan/esp/esp-idf/components/driver/include/driver/uart.h:
 
-/home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
+/home/thuan/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
 
-/home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
+/home/thuan/esp/esp-idf/components/soc/esp32/include/soc/uart_struct.h:
 
-/home/thuan/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
+/home/thuan/esp/esp-idf/components/driver/include/driver/periph_ctrl.h:
 
-/home/thuan/esp/esp-idf/components/esp32/include/xtensa/hal.h:
+/home/thuan/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
+
+/home/thuan/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h:
+
+/home/thuan/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h:
+
+/home/thuan/esp/esp-idf/components/esp32/include/esp_dport_access.h:
+
+/home/thuan/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h:
+
+/home/thuan/esp/esp-idf/components/esp32/include/xtensa/xtruntime.h:
 
 /home/thuan/esp/esp-idf/components/esp32/include/xtensa/config/core.h:
+
+/home/thuan/esp/esp-idf/components/esp32/include/xtensa/hal.h:
 
 /home/thuan/esp/esp-idf/components/esp32/include/xtensa/xtensa-versions.h:
 
@@ -179,17 +206,27 @@ hello_world_main.o: \
 
 /home/thuan/esp/esp-idf/components/esp32/include/xtensa/config/tie.h:
 
+/home/thuan/esp/esp-idf/components/esp32/include/xtensa/config/specreg.h:
+
+/home/thuan/esp/esp-idf/components/esp32/include/xtensa/corebits.h:
+
+/home/thuan/esp/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h:
+
+/home/thuan/esp/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h:
+
+/home/thuan/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h:
+
+/home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
+
+/home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
+
+/home/thuan/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
+
 /home/thuan/esp/esp-idf/components/esp32/include/xtensa/config/system.h:
 
 /home/thuan/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h:
 
-/home/thuan/esp/esp-idf/components/esp32/include/xtensa/corebits.h:
-
-/home/thuan/esp/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h:
-
 /home/thuan/esp/esp-idf/components/esp32/include/rom/ets_sys.h:
-
-/home/thuan/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 
 /home/thuan/esp/esp-idf/components/freertos/include/freertos/projdefs.h:
 
@@ -198,12 +235,6 @@ hello_world_main.o: \
 /home/thuan/esp/esp-idf/components/freertos/include/freertos/deprecated_definitions.h:
 
 /home/thuan/esp/esp-idf/components/freertos/include/freertos/portmacro.h:
-
-/home/thuan/esp/esp-idf/components/esp32/include/xtensa/xtruntime.h:
-
-/home/thuan/esp/esp-idf/components/esp32/include/xtensa/config/specreg.h:
-
-/home/thuan/esp/esp-idf/components/esp32/include/xtensa/xtruntime-core-state.h:
 
 /home/thuan/esp/esp-idf/components/esp32/include/esp_crosscore_int.h:
 
@@ -233,5 +264,19 @@ hello_world_main.o: \
 
 /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 
-/home/thuan/esp/esp-idf/components/driver/include/driver/gpio.h:
+/home/thuan/esp/esp-idf/components/freertos/include/freertos/semphr.h:
+
+/home/thuan/esp/esp-idf/components/freertos/include/freertos/queue.h:
+
+/home/thuan/esp/esp-idf/components/freertos/include/freertos/task.h:
+
+/home/thuan/esp/esp-idf/components/newlib/include/limits.h:
+
+/home/thuan/esp/esp-idf/components/freertos/include/freertos/list.h:
+
+/home/thuan/esp/esp-idf/components/freertos/include/freertos/queue.h:
+
+/home/thuan/esp/esp-idf/components/esp_ringbuf/include/freertos/ringbuf.h:
+
+/home/thuan/esp/esp-idf/components/soc/esp32/include/soc/uart_channel.h:
 /home/thuan/Documents/Git_stm32f4/Template/main/./hello_world_main.c:
