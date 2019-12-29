@@ -1,6 +1,6 @@
 port/esp_mem.o: /home/thuan/esp/esp-idf/components/mbedtls/port/esp_mem.c \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_attr.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/heap/include/esp_heap_caps.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdint.h \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/_default_types.h \
@@ -25,7 +25,7 @@ port/esp_mem.o: /home/thuan/esp/esp-idf/components/mbedtls/port/esp_mem.c \
 
 /home/thuan/esp/esp-idf/components/esp32/include/esp_attr.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/heap/include/esp_heap_caps.h:
 

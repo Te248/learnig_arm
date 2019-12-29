@@ -23,7 +23,7 @@ esp_adapter.o: /home/thuan/esp/esp-idf/components/esp32/esp_adapter.c \
  /home/thuan/esp/esp-idf/components/newlib/include/string.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/string.h \
  /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/newlib/include/assert.h \
  /home/thuan/esp/esp-idf/components/newlib/platform_include/pthread.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/time.h \
@@ -208,7 +208,7 @@ esp_adapter.o: /home/thuan/esp/esp-idf/components/esp32/esp_adapter.c \
 
 /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/assert.h:
 

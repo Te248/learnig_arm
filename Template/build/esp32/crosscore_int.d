@@ -17,7 +17,7 @@ crosscore_int.o: /home/thuan/esp/esp-idf/components/esp32/crosscore_int.c \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/cdefs.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/string.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_attr.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_err.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdio.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/types.h \
@@ -130,7 +130,7 @@ crosscore_int.o: /home/thuan/esp/esp-idf/components/esp32/crosscore_int.c \
 
 /home/thuan/esp/esp-idf/components/esp32/include/esp_attr.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/esp32/include/esp_err.h:
 

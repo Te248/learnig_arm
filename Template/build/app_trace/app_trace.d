@@ -23,7 +23,7 @@ app_trace.o: /home/thuan/esp/esp-idf/components/app_trace/app_trace.c \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/_intsup.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_assert.h \
  /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdlib.h \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /home/thuan/esp/esp-idf/components/newlib/include/alloca.h \
@@ -142,7 +142,7 @@ app_trace.o: /home/thuan/esp/esp-idf/components/app_trace/app_trace.c \
 
 /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/stdlib.h:
 

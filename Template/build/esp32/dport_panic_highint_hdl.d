@@ -14,7 +14,7 @@ dport_panic_highint_hdl.o: \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
  /home/thuan/esp/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_panic.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/soc.h
@@ -47,7 +47,7 @@ dport_panic_highint_hdl.o: \
 
 /home/thuan/esp/esp-idf/components/esp32/include/esp_panic.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/soc.h:
 

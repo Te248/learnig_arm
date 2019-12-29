@@ -39,7 +39,7 @@ vfs_uart.o: /home/thuan/esp/esp-idf/components/vfs/vfs_uart.c \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/time.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/thuan/esp/esp-idf/components/esp32/include/xtensa/hal.h \
  /home/thuan/esp/esp-idf/components/esp32/include/xtensa/config/core.h \
@@ -202,7 +202,7 @@ vfs_uart.o: /home/thuan/esp/esp-idf/components/vfs/vfs_uart.c \
 
 /home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 

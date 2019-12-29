@@ -37,7 +37,7 @@ nghttp2/lib/nghttp2_frame.o: \
  /home/thuan/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_mem.h \
  /home/thuan/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_rcbuf.h \
  /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/newlib/include/assert.h \
  /home/thuan/esp/esp-idf/components/newlib/platform_include/errno.h \
  /home/thuan/esp/esp-idf/components/newlib/include/errno.h \
@@ -121,7 +121,7 @@ nghttp2/lib/nghttp2_frame.o: \
 
 /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/assert.h:
 

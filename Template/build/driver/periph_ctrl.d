@@ -10,7 +10,7 @@ periph_ctrl.o: /home/thuan/esp/esp-idf/components/driver/periph_ctrl.c \
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_assert.h \
  /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdlib.h \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/ieeefp.h \
  /home/thuan/esp/esp-idf/components/newlib/include/_ansi.h \
@@ -106,7 +106,7 @@ periph_ctrl.o: /home/thuan/esp/esp-idf/components/driver/periph_ctrl.c \
 
 /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/stdlib.h:
 

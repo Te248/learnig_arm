@@ -1,7 +1,7 @@
 mbedtls/library/version_features.o: \
  /home/thuan/esp/esp-idf/components/mbedtls/mbedtls/library/version_features.c \
  /home/thuan/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/mbedtls/port/include/esp_mem.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdlib.h \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/ieeefp.h \
@@ -27,7 +27,7 @@ mbedtls/library/version_features.o: \
 
 /home/thuan/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/mbedtls/port/include/esp_mem.h:
 

@@ -25,7 +25,7 @@ lib/http_utils.o: \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/sched.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/stdio.h \
  /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/newlib/include/assert.h \
  /home/thuan/esp/esp-idf/components/esp_http_client/lib/include/http_utils.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/time.h \
@@ -81,7 +81,7 @@ lib/http_utils.o: \
 
 /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/assert.h:
 

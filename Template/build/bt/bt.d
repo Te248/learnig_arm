@@ -22,7 +22,7 @@ bt.o: /home/thuan/esp/esp-idf/components/bt/bt.c \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/stdio.h \
  /home/thuan/esp/esp-idf/components/newlib/include/string.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/string.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/heap/include/esp_heap_caps.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdint.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/_intsup.h \
@@ -153,7 +153,7 @@ bt.o: /home/thuan/esp/esp-idf/components/bt/bt.c \
 
 /home/thuan/esp/esp-idf/components/newlib/include/sys/string.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/heap/include/esp_heap_caps.h:
 

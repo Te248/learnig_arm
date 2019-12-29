@@ -13,7 +13,7 @@ xtensa_vectors.o: \
  /home/thuan/esp/esp-idf/components/esp32/include/xtensa/corebits.h \
  /home/thuan/esp/esp-idf/components/esp32/include/xtensa/config/system.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/xtensa_context.h \
  /home/thuan/esp/esp-idf/components/esp32/include/xtensa/xtruntime-frames.h \
@@ -50,7 +50,7 @@ xtensa_vectors.o: \
 
 /home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h:
 

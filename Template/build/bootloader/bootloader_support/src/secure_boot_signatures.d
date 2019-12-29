@@ -1,6 +1,6 @@
 src/secure_boot_signatures.o: \
  /home/thuan/esp/esp-idf/components/bootloader_support/src/secure_boot_signatures.c \
- /home/thuan/Documents/Git_stm32f4/Template/build/bootloader/../include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/bootloader/../include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_flash.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_err.h \
  /home/thuan/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
@@ -18,7 +18,7 @@ src/secure_boot_signatures.o: \
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/thuan/esp/esp-idf/components/micro-ecc/micro-ecc/uECC.h
 
-/home/thuan/Documents/Git_stm32f4/Template/build/bootloader/../include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/bootloader/../include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_flash.h:
 

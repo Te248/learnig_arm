@@ -10,7 +10,7 @@ library/ssl_x509.o: \
  /home/thuan/esp/esp-idf/components/openssl/include/internal/ssl_methods.h \
  /home/thuan/esp/esp-idf/components/openssl/include/internal/ssl_dbg.h \
  /home/thuan/esp/esp-idf/components/openssl/include/platform/ssl_opt.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/openssl/include/platform/ssl_port.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_types.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/cdefs.h \
@@ -67,7 +67,7 @@ library/ssl_x509.o: \
 
 /home/thuan/esp/esp-idf/components/openssl/include/platform/ssl_opt.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/openssl/include/platform/ssl_port.h:
 

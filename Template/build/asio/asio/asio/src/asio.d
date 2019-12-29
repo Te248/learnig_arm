@@ -3,7 +3,7 @@ asio/asio/src/asio.o: \
  /home/thuan/esp/esp-idf/components/asio/asio/asio/include/asio/impl/src.hpp \
  /home/thuan/esp/esp-idf/components/asio/asio/asio/include/asio/detail/config.hpp \
  /home/thuan/esp/esp-idf/components/asio/port/include/esp_asio_config.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/asio/asio/asio/include/asio/impl/error.ipp \
  /home/thuan/esp/esp-idf/components/asio/asio/asio/include/asio/error.hpp \
  /home/thuan/esp/esp-idf/components/asio/asio/asio/include/asio/error_code.hpp \
@@ -327,7 +327,7 @@ asio/asio/src/asio.o: \
 
 /home/thuan/esp/esp-idf/components/asio/port/include/esp_asio_config.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/asio/asio/asio/include/asio/impl/error.ipp:
 

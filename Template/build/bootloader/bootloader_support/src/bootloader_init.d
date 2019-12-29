@@ -1,7 +1,7 @@
 src/bootloader_init.o: \
  /home/thuan/esp/esp-idf/components/bootloader_support/src/bootloader_init.c \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_attr.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/bootloader/../include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/bootloader/../include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/log/include/esp_log.h \
  /home/thuan/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
@@ -64,7 +64,7 @@ src/bootloader_init.o: \
 
 /home/thuan/esp/esp-idf/components/esp32/include/esp_attr.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/bootloader/../include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/bootloader/../include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/log/include/esp_log.h:
 

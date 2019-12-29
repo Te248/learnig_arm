@@ -20,7 +20,7 @@ spiram.o: /home/thuan/esp/esp-idf/components/esp32/spiram.c \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/syslimits.h \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/endian.h \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/param.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_attr.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_err.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdio.h \
@@ -137,7 +137,7 @@ spiram.o: /home/thuan/esp/esp-idf/components/esp32/spiram.c \
 
 /home/thuan/esp/esp-idf/components/newlib/include/machine/param.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/esp32/include/esp_attr.h:
 

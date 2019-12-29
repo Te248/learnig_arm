@@ -1,5 +1,5 @@
 stack_check.o: /home/thuan/esp/esp-idf/components/esp32/stack_check.c \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_system.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdint.h \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/_default_types.h \
@@ -58,7 +58,7 @@ stack_check.o: /home/thuan/esp/esp-idf/components/esp32/stack_check.c \
  /home/thuan/esp/esp-idf/components/esp32/include/xtensa/config/core-matmap.h \
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/esp32/include/esp_system.h:
 

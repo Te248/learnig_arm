@@ -26,7 +26,7 @@ src/bootloader_sha.o: \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/sched.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/stdio.h \
  /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/newlib/include/assert.h \
  /home/thuan/esp/esp-idf/components/newlib/include/string.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/string.h \
@@ -92,7 +92,7 @@ src/bootloader_sha.o: \
 
 /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/assert.h:
 

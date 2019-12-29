@@ -7,7 +7,7 @@ esp32/rtc_init.o: /home/thuan/esp/esp-idf/components/soc/esp32/rtc_init.c \
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/dport_reg.h \
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/dport_access.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_attr.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/bootloader/../include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/bootloader/../include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_dport_access.h \
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/uart_reg.h \
  /home/thuan/esp/esp-idf/components/esp32/include/xtensa/xtruntime.h \
@@ -39,7 +39,7 @@ esp32/rtc_init.o: /home/thuan/esp/esp-idf/components/soc/esp32/rtc_init.c \
 
 /home/thuan/esp/esp-idf/components/esp32/include/esp_attr.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/bootloader/../include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/bootloader/../include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/esp32/include/esp_dport_access.h:
 

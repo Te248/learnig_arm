@@ -22,7 +22,7 @@ wifi_init.o: /home/thuan/esp/esp-idf/components/esp32/wifi_init.c \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/sched.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/stdio.h \
  /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdlib.h \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /home/thuan/esp/esp-idf/components/newlib/include/alloca.h \
@@ -182,7 +182,7 @@ wifi_init.o: /home/thuan/esp/esp-idf/components/esp32/wifi_init.c \
 
 /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/stdlib.h:
 

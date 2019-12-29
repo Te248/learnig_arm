@@ -5,7 +5,7 @@ eth_phy/phy_lan8720.o: \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/_default_types.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/features.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/_intsup.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_assert.h \
@@ -48,7 +48,7 @@ eth_phy/phy_lan8720.o: \
 
 /home/thuan/esp/esp-idf/components/newlib/include/sys/_intsup.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/esp32/include/rom/ets_sys.h:
 

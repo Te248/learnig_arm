@@ -18,7 +18,7 @@ ipc.o: /home/thuan/esp/esp-idf/components/esp32/ipc.c \
  /home/thuan/esp/esp-idf/components/newlib/include/string.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/string.h \
  /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/newlib/include/assert.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_err.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdint.h \
@@ -122,7 +122,7 @@ ipc.o: /home/thuan/esp/esp-idf/components/esp32/ipc.c \
 
 /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/assert.h:
 

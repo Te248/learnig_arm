@@ -27,7 +27,7 @@ event_default_handlers.o: \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/sched.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/stdio.h \
  /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/newlib/include/assert.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_wifi.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
@@ -189,7 +189,7 @@ event_default_handlers.o: \
 
 /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/assert.h:
 

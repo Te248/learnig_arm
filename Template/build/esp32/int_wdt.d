@@ -1,5 +1,5 @@
 int_wdt.o: /home/thuan/esp/esp-idf/components/esp32/int_wdt.c \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdint.h \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/_default_types.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/features.h \
@@ -90,7 +90,7 @@ int_wdt.o: /home/thuan/esp/esp-idf/components/esp32/int_wdt.c \
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_int_wdt.h
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/stdint.h:
 

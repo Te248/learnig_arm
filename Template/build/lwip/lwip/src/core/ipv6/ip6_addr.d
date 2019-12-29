@@ -34,7 +34,7 @@ lwip/src/core/ipv6/ip6_addr.o: \
  /home/thuan/esp/esp-idf/components/vfs/include/sys/ioctl.h \
  /home/thuan/esp/esp-idf/components/newlib/platform_include/sys/select.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_task.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
  /home/thuan/esp/esp-idf/components/esp32/include/xtensa/hal.h \
@@ -182,7 +182,7 @@ lwip/src/core/ipv6/ip6_addr.o: \
 
 /home/thuan/esp/esp-idf/components/esp32/include/esp_task.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 

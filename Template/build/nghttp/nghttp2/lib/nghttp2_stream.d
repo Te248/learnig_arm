@@ -41,7 +41,7 @@ nghttp2/lib/nghttp2_stream.o: \
  /home/thuan/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_map.h \
  /home/thuan/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_pq.h \
  /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/newlib/include/assert.h \
  /home/thuan/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_session.h \
  /home/thuan/esp/esp-idf/components/nghttp/nghttp2/lib/nghttp2_callbacks.h \
@@ -130,7 +130,7 @@ nghttp2/lib/nghttp2_stream.o: \
 
 /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/assert.h:
 

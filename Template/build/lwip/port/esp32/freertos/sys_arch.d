@@ -34,7 +34,7 @@ port/esp32/freertos/sys_arch.o: \
  /home/thuan/esp/esp-idf/components/newlib/include/errno.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/errno.h \
  /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdlib.h \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /home/thuan/esp/esp-idf/components/newlib/include/alloca.h \
@@ -189,7 +189,7 @@ port/esp32/freertos/sys_arch.o: \
 
 /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/stdlib.h:
 

@@ -18,7 +18,7 @@ random.o: /home/thuan/esp/esp-idf/components/newlib/random.c \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/endian.h \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/param.h \
  /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdlib.h \
  /home/thuan/esp/esp-idf/components/newlib/include/_ansi.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/reent.h \
@@ -109,7 +109,7 @@ random.o: /home/thuan/esp/esp-idf/components/newlib/random.c \
 
 /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/stdlib.h:
 

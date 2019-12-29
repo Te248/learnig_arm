@@ -30,7 +30,7 @@ unity_runner.o: /home/thuan/esp/esp-idf/components/unity/unity_runner.c \
  /home/thuan/esp/esp-idf/components/newlib/include/stdint.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/_intsup.h \
  /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/newlib/include/assert.h \
  /home/thuan/esp/esp-idf/components/unity/include/unity_test_runner.h \
  /home/thuan/esp/esp-idf/components/newlib/include/setjmp.h \
@@ -100,7 +100,7 @@ unity_runner.o: /home/thuan/esp/esp-idf/components/unity/unity_runner.c \
 
 /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/assert.h:
 

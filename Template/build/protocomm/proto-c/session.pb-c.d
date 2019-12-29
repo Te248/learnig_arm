@@ -3,7 +3,7 @@ proto-c/session.pb-c.o: \
  /home/thuan/esp/esp-idf/components/protocomm/proto-c/session.pb-c.h \
  /home/thuan/esp/esp-idf/components/protobuf-c/protobuf-c/protobuf-c/protobuf-c.h \
  /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdlib.h \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/ieeefp.h \
  /home/thuan/esp/esp-idf/components/newlib/include/_ansi.h \
@@ -34,7 +34,7 @@ proto-c/session.pb-c.o: \
 
 /home/thuan/esp/esp-idf/components/newlib/platform_include/assert.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/stdlib.h:
 

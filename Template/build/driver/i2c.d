@@ -23,7 +23,7 @@ i2c.o: /home/thuan/esp/esp-idf/components/driver/i2c.c \
  /home/thuan/esp/esp-idf/components/newlib/include/stdint.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/_intsup.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_attr.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_intr.h \
  /home/thuan/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
@@ -146,7 +146,7 @@ i2c.o: /home/thuan/esp/esp-idf/components/driver/i2c.c \
 
 /home/thuan/esp/esp-idf/components/esp32/include/esp_attr.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/esp32/include/esp_intr.h:
 

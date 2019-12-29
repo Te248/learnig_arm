@@ -15,7 +15,7 @@ src/esp_image_format.o: \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_err.h \
  /home/thuan/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_flash_data_types.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/bootloader/../include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/bootloader/../include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/bootloader_support/include/esp_secure_boot.h \
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/efuse_reg.h \
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/soc.h \
@@ -58,7 +58,7 @@ src/esp_image_format.o: \
 
 /home/thuan/esp/esp-idf/components/esp32/include/esp_flash_data_types.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/bootloader/../include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/bootloader/../include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/bootloader_support/include/esp_secure_boot.h:
 

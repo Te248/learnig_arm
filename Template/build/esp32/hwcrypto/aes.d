@@ -16,7 +16,7 @@ hwcrypto/aes.o: /home/thuan/esp/esp-idf/components/esp32/hwcrypto/aes.c \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/string.h \
  /home/thuan/esp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h \
  /home/thuan/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/mbedtls/port/include/esp_mem.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdlib.h \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/stdlib.h \
@@ -129,7 +129,7 @@ hwcrypto/aes.o: /home/thuan/esp/esp-idf/components/esp32/hwcrypto/aes.c \
 
 /home/thuan/esp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/mbedtls/port/include/esp_mem.h:
 

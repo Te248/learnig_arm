@@ -1,5 +1,5 @@
 intr_alloc.o: /home/thuan/esp/esp-idf/components/esp32/intr_alloc.c \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdint.h \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/_default_types.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/features.h \
@@ -84,7 +84,7 @@ intr_alloc.o: /home/thuan/esp/esp-idf/components/esp32/intr_alloc.c \
  /home/thuan/esp/esp-idf/components/log/include/esp_log_internal.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_ipc.h
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/stdint.h:
 

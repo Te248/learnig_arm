@@ -27,7 +27,7 @@ syscalls.o: /home/thuan/esp/esp-idf/components/newlib/syscalls.c \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/stdlib.h \
  /home/thuan/esp/esp-idf/components/newlib/include/alloca.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_attr.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdint.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/_intsup.h \
@@ -140,7 +140,7 @@ syscalls.o: /home/thuan/esp/esp-idf/components/newlib/syscalls.c \
 
 /home/thuan/esp/esp-idf/components/esp32/include/esp_attr.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 

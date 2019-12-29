@@ -3,7 +3,7 @@ src/flash_encrypt.o: \
  /home/thuan/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_flash.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_err.h \
  /home/thuan/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
- /home/thuan/Documents/Git_stm32f4/Template/build/bootloader/../include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/bootloader/../include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/bootloader_support/include/esp_image_format.h \
  /home/thuan/esp/esp-idf/components/bootloader_support/include/esp_flash_partitions.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_flash_data_types.h \
@@ -45,7 +45,7 @@ src/flash_encrypt.o: \
 
 /home/thuan/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 
-/home/thuan/Documents/Git_stm32f4/Template/build/bootloader/../include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/bootloader/../include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/bootloader_support/include/esp_image_format.h:
 

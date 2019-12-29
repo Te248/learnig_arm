@@ -1,6 +1,6 @@
 src/secure_boot_signatures.o: \
  /home/thuan/esp/esp-idf/components/bootloader_support/src/secure_boot_signatures.c \
- /home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h \
+ /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_flash.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdint.h \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/_default_types.h \
@@ -47,7 +47,7 @@ src/secure_boot_signatures.o: \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/endian.h \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/param.h
 
-/home/thuan/Documents/Git_stm32f4/Template/build/include/sdkconfig.h:
+/home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h:
 
 /home/thuan/esp/esp-idf/components/bootloader_support/include_bootloader/bootloader_flash.h:
 
