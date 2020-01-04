@@ -1,23 +1,37 @@
 #include <stdio.h>
 
-#include "driver/mcpwm.h"
+#include "esp_wifi.h"
+#include "esp_interface.h"
+
+#include <string.h>
 
 
 void app_main()
 {
-    mcpwm_config_t mcpwm_conf=
+    wifi_init_config_t my_config =  WIFI_INIT_CONFIG_DEFAULT();
+
+    wifi_sta_config_t my_sta=
     {
-        .frequency=10000,
-        .cmpr_a = 50,
-        .cmpr_b=0,
-        .duty_mode= 0,
-        .counter_mode=1,
+        .ssid="lau101",
+        .password="999999999",
+        .channel=0,
 
     };
 
-    mcpwm_gpio_init(MCPWM_UNIT_0,MCPWM0A, GPIO_NUM_2);
-    mcpwm_init(MCPWM_UNIT_0, MCPWM_TIMER_0, &mcpwm_conf);
-    mcpwm_start(MCPWM_UNIT_0, MCPWM_TIMER_0 );
+    wifi_config_t a=
+    {
+        .sta=my_sta,
+    };
+      
+
+
+    esp_wifi_init(&my_config);
+    esp_wifi_set_mode(WIFI_MODE_STA);
+    esp_wifi_set_config(ESP_IF_WIFI_STA,&a);
+
+
+    esp_wifi_start();
+
     while(1)
     {}
 }
