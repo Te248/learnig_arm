@@ -18,10 +18,9 @@ hello_world_main.o: \
  /home/thuan/esp/esp-idf/components/newlib/include/machine/types.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/sched.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/stdio.h \
- /home/thuan/esp/esp-idf/components/esp32/include/esp_wifi.h \
+ /home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/thuan/esp/esp-idf/components/newlib/include/stdint.h \
  /home/thuan/esp/esp-idf/components/newlib/include/sys/_intsup.h \
- /home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h \
  /home/thuan/Documents/Git_esp/Template/build/include/sdkconfig.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/xtensa_config.h \
@@ -77,15 +76,19 @@ hello_world_main.o: \
  /home/thuan/esp/esp-idf/components/esp32/include/rom/ets_sys.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/xtensa_api.h \
  /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h \
+ /home/thuan/esp/esp-idf/components/freertos/include/freertos/task.h \
+ /home/thuan/esp/esp-idf/components/newlib/include/limits.h \
+ /home/thuan/esp/esp-idf/components/freertos/include/freertos/list.h \
+ /home/thuan/esp/esp-idf/components/freertos/include/freertos/event_groups.h \
+ /home/thuan/esp/esp-idf/components/freertos/include/freertos/timers.h \
+ /home/thuan/esp/esp-idf/components/freertos/include/freertos/task.h \
+ /home/thuan/esp/esp-idf/components/esp32/include/esp_wifi.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /home/thuan/esp/esp-idf/components/esp32/include/rom/queue.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_wifi_types.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_interface.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_wifi_crypto_types.h \
  /home/thuan/esp/esp-idf/components/esp_event/include/esp_event.h \
- /home/thuan/esp/esp-idf/components/freertos/include/freertos/task.h \
- /home/thuan/esp/esp-idf/components/newlib/include/limits.h \
- /home/thuan/esp/esp-idf/components/freertos/include/freertos/list.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/semphr.h \
  /home/thuan/esp/esp-idf/components/freertos/include/freertos/queue.h \
  /home/thuan/esp/esp-idf/components/esp_event/include/esp_event_base.h \
@@ -126,9 +129,13 @@ hello_world_main.o: \
  /home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/def.h \
  /home/thuan/esp/esp-idf/components/lwip/include/apps/dhcpserver/dhcpserver.h \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_wifi_os_adapter.h \
- /home/thuan/esp/esp-idf/components/esp32/include/esp_interface.h \
- /home/thuan/esp/esp-idf/components/newlib/include/string.h \
- /home/thuan/esp/esp-idf/components/newlib/include/sys/string.h
+ /home/thuan/esp/esp-idf/components/esp32/include/esp_event_loop.h \
+ /home/thuan/esp/esp-idf/components/log/include/esp_log.h \
+ /home/thuan/esp/esp-idf/components/log/include/esp_log_internal.h \
+ /home/thuan/esp/esp-idf/components/nvs_flash/include/nvs_flash.h \
+ /home/thuan/esp/esp-idf/components/nvs_flash/include/nvs.h \
+ /home/thuan/esp/esp-idf/components/spi_flash/include/esp_partition.h \
+ /home/thuan/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h
 
 /home/thuan/esp/esp-idf/components/newlib/include/stdio.h:
 
@@ -166,13 +173,11 @@ hello_world_main.o: \
 
 /home/thuan/esp/esp-idf/components/newlib/include/sys/stdio.h:
 
-/home/thuan/esp/esp-idf/components/esp32/include/esp_wifi.h:
+/home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/stdint.h:
 
 /home/thuan/esp/esp-idf/components/newlib/include/sys/_intsup.h:
-
-/home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOS.h:
 
 /home/thuan/esp/esp-idf/components/freertos/include/freertos/FreeRTOSConfig.h:
 
@@ -284,6 +289,20 @@ hello_world_main.o: \
 
 /home/thuan/esp/esp-idf/components/soc/esp32/include/soc/touch_channel.h:
 
+/home/thuan/esp/esp-idf/components/freertos/include/freertos/task.h:
+
+/home/thuan/esp/esp-idf/components/newlib/include/limits.h:
+
+/home/thuan/esp/esp-idf/components/freertos/include/freertos/list.h:
+
+/home/thuan/esp/esp-idf/components/freertos/include/freertos/event_groups.h:
+
+/home/thuan/esp/esp-idf/components/freertos/include/freertos/timers.h:
+
+/home/thuan/esp/esp-idf/components/freertos/include/freertos/task.h:
+
+/home/thuan/esp/esp-idf/components/esp32/include/esp_wifi.h:
+
 /home/thuan/esp/esp-idf/components/freertos/include/freertos/queue.h:
 
 /home/thuan/esp/esp-idf/components/esp32/include/rom/queue.h:
@@ -295,12 +314,6 @@ hello_world_main.o: \
 /home/thuan/esp/esp-idf/components/esp32/include/esp_wifi_crypto_types.h:
 
 /home/thuan/esp/esp-idf/components/esp_event/include/esp_event.h:
-
-/home/thuan/esp/esp-idf/components/freertos/include/freertos/task.h:
-
-/home/thuan/esp/esp-idf/components/newlib/include/limits.h:
-
-/home/thuan/esp/esp-idf/components/freertos/include/freertos/list.h:
 
 /home/thuan/esp/esp-idf/components/freertos/include/freertos/semphr.h:
 
@@ -382,9 +395,17 @@ hello_world_main.o: \
 
 /home/thuan/esp/esp-idf/components/esp32/include/esp_wifi_os_adapter.h:
 
-/home/thuan/esp/esp-idf/components/esp32/include/esp_interface.h:
+/home/thuan/esp/esp-idf/components/esp32/include/esp_event_loop.h:
 
-/home/thuan/esp/esp-idf/components/newlib/include/string.h:
+/home/thuan/esp/esp-idf/components/log/include/esp_log.h:
 
-/home/thuan/esp/esp-idf/components/newlib/include/sys/string.h:
+/home/thuan/esp/esp-idf/components/log/include/esp_log_internal.h:
+
+/home/thuan/esp/esp-idf/components/nvs_flash/include/nvs_flash.h:
+
+/home/thuan/esp/esp-idf/components/nvs_flash/include/nvs.h:
+
+/home/thuan/esp/esp-idf/components/spi_flash/include/esp_partition.h:
+
+/home/thuan/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
 /home/thuan/Documents/Git_esp/Template/main/./hello_world_main.c:
