@@ -134,11 +134,12 @@ hello_world_main.o: \
  /home/thuan/esp/esp-idf/components/esp32/include/esp_event_loop.h \
  /home/thuan/esp/esp-idf/components/log/include/esp_log.h \
  /home/thuan/esp/esp-idf/components/log/include/esp_log_internal.h \
- /home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/netdb.h \
- /home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h \
- /home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h \
  /home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/err.h \
+ /home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h \
+ /home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h \
  /home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h \
+ /home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/sys.h \
+ /home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/netdb.h \
  /home/thuan/esp/esp-idf/components/nvs_flash/include/nvs_flash.h \
  /home/thuan/esp/esp-idf/components/nvs_flash/include/nvs.h \
  /home/thuan/esp/esp-idf/components/spi_flash/include/esp_partition.h \
@@ -412,15 +413,17 @@ hello_world_main.o: \
 
 /home/thuan/esp/esp-idf/components/log/include/esp_log_internal.h:
 
-/home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/netdb.h:
-
-/home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h:
+/home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/err.h:
 
 /home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/sockets.h:
 
-/home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/err.h:
+/home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/inet.h:
 
 /home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/errno.h:
+
+/home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/sys.h:
+
+/home/thuan/esp/esp-idf/components/lwip/lwip/src/include/lwip/netdb.h:
 
 /home/thuan/esp/esp-idf/components/nvs_flash/include/nvs_flash.h:
 
