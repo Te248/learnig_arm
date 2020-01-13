@@ -17,10 +17,12 @@
 
 #include "nvs_flash.h"
 
-#define CONFIG_WIFI_SSID "lau101"
-#define CONFIG_WIFI_PASSWORD "999999999"
+#include "modte/modte.h"
 
-#define HOST_IP_ADDR "192.168.2.123"
+#define CONFIG_WIFI_SSID "iotvoip"
+#define CONFIG_WIFI_PASSWORD "@iotmaker.vn"
+
+#define HOST_IP_ADDR "192.168.1.15"
 #define PORT 8080
 static const char *TAG = "TCP_Socket";
 static const char *payload = "hello server";
