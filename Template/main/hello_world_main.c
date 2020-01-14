@@ -19,13 +19,23 @@
 
 #include "modte/modte.h"
 
-#define CONFIG_WIFI_SSID "iotvoip"
-#define CONFIG_WIFI_PASSWORD "@iotmaker.vn"
+#define CONFIG_WIFI_SSID "lau101"
+#define CONFIG_WIFI_PASSWORD "999999999"
 
-#define HOST_IP_ADDR "192.168.1.15"
+#define HOST_IP_ADDR "192.168.2.123"
 #define PORT 8080
 static const char *TAG = "TCP_Socket";
-static const char *payload = "hello server";
+char *payload ;
+uint16_t my_ID;
+
+modte_frame_t thuan=
+{
+    .ID=0x0000,
+	.Length =0x00,
+	.Function_Opcode=0xFF,
+	.Perihap =0x00,
+	.Data=0x0000,
+};
 
 // Event group
 static EventGroupHandle_t wifi_event_group;
@@ -54,15 +64,13 @@ static esp_err_t event_handler(void *ctx, system_event_t *event)
    
 	return ESP_OK;
 }
-
-
 // Main application
 void app_main()
 {
 	// disable the default wifi logging
 	esp_log_level_set("wifi", ESP_LOG_NONE);
 
-        //////////////////////
+    ///////////store imformation about wifi ///////////
     ESP_ERROR_CHECK(nvs_flash_init());
 	//ESP_ERROR_CHECK(esp_netif_init());
 	
@@ -81,7 +89,7 @@ void app_main()
 	ESP_ERROR_CHECK(esp_wifi_set_storage(WIFI_STORAGE_RAM));
 	ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));
 
-	// wifi config 
+	// wifi config ///
 	wifi_config_t wifi_config = {
         .sta = {
             .ssid = CONFIG_WIFI_SSID,
@@ -107,70 +115,85 @@ void app_main()
 	printf("\n");
 	
 	// start the main task
-    char rx_buffer[128];
+    char rx_buffer[7];
     char addr_str[128];
 
    while(1)
     {
         while(1)
-    {
-     ///inittal///
-        struct sockaddr_in dest_addr;
-        dest_addr.sin_addr.s_addr = inet_addr(HOST_IP_ADDR);
-        dest_addr.sin_family = AF_INET;
-        dest_addr.sin_port = htons(PORT);
-        inet_ntoa_r(dest_addr.sin_addr, addr_str, sizeof(addr_str) - 1);
-        //Chuyển đổi địa chỉ IP số thành biểu diễn ASCII rải rác thập phân. trả về ptr cho bộ đệm tĩnh; không tái phạm!
-        // creating a TCP 
-        int sock = socket(AF_INET,SOCK_STREAM,0);
-        if (sock < 0) 
         {
-            ESP_LOGE(TAG, "Unable to create socket: errno %d", errno);
-            break;
-        }
-        ESP_LOGI(TAG, "Socket created, connecting to %s:%d", HOST_IP_ADDR, PORT);
-
-        //connect tcp server 
-        int err =connect(sock,&dest_addr,sizeof(dest_addr));
-        if (err != 0) 
-        {
-            ESP_LOGE(TAG, "Socket unable to connect: errno %d", errno);
-            break;
-        }
-        ESP_LOGI(TAG, "Successfully connected");
-        //sending data/receive data 
-            while (1) 
+            ///inittal///
+            struct sockaddr_in dest_addr;
+            dest_addr.sin_addr.s_addr = inet_addr(HOST_IP_ADDR);
+            dest_addr.sin_family = AF_INET;
+            dest_addr.sin_port = htons(PORT);
+            inet_ntoa_r(dest_addr.sin_addr, addr_str, sizeof(addr_str) - 1);
+            //Chuyển đổi địa chỉ IP số thành biểu diễn ASCII rải rác thập phân. trả về ptr cho bộ đệm tĩnh; không tái phạm!
+            // creating a TCP/// 
+            int sock = socket(AF_INET,SOCK_STREAM,0);
+            if (sock < 0) 
             {
-                int err = send(sock, payload, strlen(payload), 0);
-                if (err < 0) 
-                {
-                    ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
-                 break;
-                }
-                int len = recv(sock, rx_buffer, sizeof(rx_buffer) - 1, 0);
-                // Error occurred during receiving
-                if (len < 0) 
-                {
-                    ESP_LOGE(TAG, "recv failed: errno %d", errno);
-                    break;
-                }
-                // Data received
-                else 
-                {
-                    rx_buffer[len] = 0; // Null-terminate whatever we received and treat like a string
-                    ESP_LOGI(TAG, "Received %d bytes from %s:", len, addr_str);
-                    ESP_LOGI(TAG, "%s", rx_buffer);
-                }
+                ESP_LOGE(TAG, "Unable to create socket: errno %d", errno);
+                break;
+            }
+            ESP_LOGI(TAG, "Socket created, connecting to %s:%d", HOST_IP_ADDR, PORT);
 
-            vTaskDelay(2000 / portTICK_PERIOD_MS);
-            //closed
-            }
-            if (sock != -1) 
+            //connect tcp server/// 
+            int err =connect(sock,&dest_addr,sizeof(dest_addr));
+            if (err != 0) 
             {
-                ESP_LOGE(TAG, "Shutting down socket and restarting...");
-                shutdown(sock, 0);
-                close(sock);
+                ESP_LOGE(TAG, "Socket unable to connect: errno %d", errno);
+                break;
             }
-    }
+            ESP_LOGI(TAG, "Successfully connected");
+            /// loop receive and send data/// 
+                while (1) 
+                {
+                    ////send signed to server  
+                    modte_pack_frame(&thuan, payload);
+                    int err = send(sock, payload, strlen(payload), 0);
+                    //check error send///
+                    if (err < 0) 
+                    {
+                        ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
+                        break;
+                    }
+                    /////receive signed from server ///
+                    int len = recv(sock, rx_buffer, sizeof(rx_buffer) - 1, 0);
+                    // Error occurred during receiving
+                    if (len < 0) 
+                    {
+                        ESP_LOGE(TAG, "recv failed: errno %d", errno);
+                        break;
+                    }
+                    // Data received
+                    else 
+                    {
+                        modte_analyze_frame(&thuan, rx_buffer);
+                        rx_buffer[len] = 0; 
+                        ESP_LOGI(TAG, "Received %d bytes from %s:", len, addr_str);
+                        ESP_LOGI(TAG, "%s", rx_buffer);
+                    }
+                    if((rx_buffer[0]=='0') && (rx_buffer[1]=='0'))
+                    {
+                        modte_init(&thuan);
+                    }
+                    else 
+                    {
+                        my_ID= (uint8_t)rx_buffer[0];
+                        my_ID= (my_ID<<8) |(uint8_t) (rx_buffer[1]);
+                        set_ID( &thuan , my_ID);
+                    }
+
+                vTaskDelay(2000 / portTICK_PERIOD_MS);
+                //closed////
+                }
+                if (sock != -1) 
+                {
+                    ESP_LOGE(TAG, "Shutting down socket and restarting...");
+                    shutdown(sock, 0);
+                    close(sock);
+                }
+        }
     }
 }

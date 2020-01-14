@@ -143,7 +143,8 @@ hello_world_main.o: \
  /home/thuan/esp/esp-idf/components/nvs_flash/include/nvs_flash.h \
  /home/thuan/esp/esp-idf/components/nvs_flash/include/nvs.h \
  /home/thuan/esp/esp-idf/components/spi_flash/include/esp_partition.h \
- /home/thuan/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h
+ /home/thuan/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h \
+ /home/thuan/Documents/Git_esp/Template/main/modte/modte.h
 
 /home/thuan/esp/esp-idf/components/newlib/include/stdio.h:
 
@@ -432,4 +433,6 @@ hello_world_main.o: \
 /home/thuan/esp/esp-idf/components/spi_flash/include/esp_partition.h:
 
 /home/thuan/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:
+
+/home/thuan/Documents/Git_esp/Template/main/modte/modte.h:
 /home/thuan/Documents/Git_esp/Template/main/./hello_world_main.c:
